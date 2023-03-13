@@ -1,7 +1,3 @@
-// Copyright 2017, the Flutter project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -16,7 +12,6 @@ final ThemeData kDefaultTheme = new ThemeData(
   accentColor: Colors.orangeAccent[400],
 );
 
-/// App bar that uses iOS styling on iOS
 class PlatformAdaptiveAppBar extends AppBar {
   PlatformAdaptiveAppBar({
     Key key,
@@ -24,8 +19,7 @@ class PlatformAdaptiveAppBar extends AppBar {
     List<Widget> actions,
     Widget title,
     Widget body,
-    // TODO(jackson): other properties?
-  })
+   })
       : super(
           key: key,
           elevation: platform == TargetPlatform.iOS ? 0.0 : 4.0,
@@ -34,8 +28,6 @@ class PlatformAdaptiveAppBar extends AppBar {
         );
 }
 
-/// Button that is Material on Android and Cupertino on iOS
-/// On Android an icon button; on iOS, text is used
 class PlatformAdaptiveButton extends StatelessWidget {
   PlatformAdaptiveButton({Key key, this.child, this.icon, this.onPressed})
       : super(key: key);
