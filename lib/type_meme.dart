@@ -1,12 +1,6 @@
-// Copyright 2017, the Flutter project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-
 import 'platform_adaptive.dart';
 
 class TypeMemeRoute extends MaterialPageRoute<String> {
@@ -27,7 +21,6 @@ class TypeMemeDialog extends StatefulWidget {
   State<StatefulWidget> createState() => new TypeMemeDialogState();
 }
 
-// Represents the states of typing text onto an image to make a meme.
 class TypeMemeDialogState extends State<TypeMemeDialog> {
   String _text = '';
 
